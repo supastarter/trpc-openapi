@@ -10,9 +10,9 @@
     "openapi",
     "swagger"
   ],
-  "homepage": "https://github.com/jlalmes/trpc-openapi",
-  "repository": "github:jlalmes/trpc-openapi",
-  "bugs": "https://github.com/jlalmes/trpc-openapi/issues",
+  "homepage": "https://github.com/supastarter/trpc-openapi",
+  "repository": "github:supastarter/trpc-openapi",
+  "bugs": "https://github.com/supastarter/trpc-openapi/issues",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "workspaces": [

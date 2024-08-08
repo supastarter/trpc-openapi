@@ -9,7 +9,7 @@
   <hr />
 </div>
 
-#### `trpc-openapi` is maintained by ProsePilot - simple, fast and free online [writing tools](https://www.prosepilot.com/tools).
+#### `@supastarter/trpc-openapi` is maintained by [supastarter - The ultimate SaaS starter kit for Next.js and Nuxt](https://supastarter.dev).
 
 ---
 
@@ -25,16 +25,16 @@
 
 ```bash
 # npm
-npm install trpc-openapi
+npm install @supastarter/trpc-openapi
 # yarn
-yarn add trpc-openapi
+yarn add @supastarter/trpc-openapi
 ```
 
 **2. Add `OpenApiMeta` to your tRPC instance.**
 
 ```typescript
 import { initTRPC } from '@trpc/server';
-import { OpenApiMeta } from 'trpc-openapi';
+import { OpenApiMeta } from '@supastarter/trpc-openapi';
 
 const t = initTRPC.meta<OpenApiMeta>().create(); /* 👈 */
 ```
@@ -56,7 +56,7 @@ export const appRouter = t.router({
 **4. Generate an OpenAPI document.**
 
 ```typescript
-import { generateOpenApiDocument } from 'trpc-openapi';
+import { generateOpenApiDocument } from '@supastarter/trpc-openapi';
 
 import { appRouter } from '../appRouter';
 
@@ -76,7 +76,7 @@ We currently support adapters for [`Express`](http://expressjs.com/), [`Next.js`
 
 ```typescript
 import http from 'http';
-import { createOpenApiHttpHandler } from 'trpc-openapi';
+import { createOpenApiHttpHandler } from '@supastarter/trpc-openapi';
 
 import { appRouter } from '../appRouter';
 
